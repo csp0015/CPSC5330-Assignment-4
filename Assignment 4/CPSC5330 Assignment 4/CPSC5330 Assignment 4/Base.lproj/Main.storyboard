@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CPSC5330_Assignment_4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AM_Image" translatesAutoresizingMaskIntoConstraints="NO" id="FMY-Dg-JjL">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14g-Ve-crV">
+                                <rect key="frame" x="160.66666666666663" y="84" width="72.000000000000028" height="33.666666666666657"/>
+                                <color key="backgroundColor" red="0.1333333333" green="0.3411764706" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.1333333333" green="0.3411764706" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" red="0.78039215689999997" green="0.97647058819999999" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zii-rB-Lyc">
+                                <rect key="frame" x="166" y="152.66666666666666" width="61" height="29"/>
+                                <color key="backgroundColor" red="0.1333333333" green="0.3411764706" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.1333333333" green="0.3411764706" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.78039215689999997" green="0.97647058819999999" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajv-BG-RPP">
+                                <rect key="frame" x="159" y="753.66666666666663" width="75" height="34.333333333333371"/>
+                                <color key="backgroundColor" red="0.1333333333" green="0.3411764706" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.21960784310000001" green="0.63921568630000003" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="countdownButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z10-vo-M9u"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twu-2Z-8z3">
+                                <rect key="frame" x="36.666666666666629" y="318" width="320" height="216"/>
+                                <connections>
+                                    <action selector="timeSelection:" destination="BYZ-38-t0r" eventType="valueChanged" id="EeS-Hg-O7O"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zii-rB-Lyc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3ya-JD-VIk"/>
+                            <constraint firstItem="FMY-Dg-JjL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4lu-A4-sv0"/>
+                            <constraint firstItem="FMY-Dg-JjL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5lw-Kc-5Zl"/>
+                            <constraint firstItem="ajv-BG-RPP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="96M-Nw-0AU"/>
+                            <constraint firstItem="ajv-BG-RPP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-30" id="AXz-fj-gEH"/>
+                            <constraint firstItem="FMY-Dg-JjL" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="CaA-z1-LxB"/>
+                            <constraint firstItem="FMY-Dg-JjL" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="J3J-Xk-jGf"/>
+                            <constraint firstItem="14g-Ve-crV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UKY-8H-cHh"/>
+                            <constraint firstItem="14g-Ve-crV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="V8m-8I-RwY"/>
+                            <constraint firstItem="Twu-2Z-8z3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y5d-E3-4Ty"/>
+                            <constraint firstItem="zii-rB-Lyc" firstAttribute="top" secondItem="14g-Ve-crV" secondAttribute="bottom" constant="35" id="go3-NE-pnS"/>
+                            <constraint firstItem="Twu-2Z-8z3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="u3A-fZ-XVq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="FMY-Dg-JjL" id="9Nz-PS-e2q"/>
+                        <outlet property="datePicker" destination="Twu-2Z-8z3" id="WDe-Mg-Qv8"/>
+                        <outlet property="label1" destination="14g-Ve-crV" id="c7j-qd-bXn"/>
+                        <outlet property="label2" destination="zii-rB-Lyc" id="Lah-lV-oCO"/>
+                        <outlet property="startButton" destination="ajv-BG-RPP" id="yEm-oT-BLh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112.21374045801527" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AM_Image" width="113.33333587646484" height="49.333332061767578"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
